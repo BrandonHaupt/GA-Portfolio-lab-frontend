@@ -1,0 +1,50 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+  
+* {
+    padding: 0; 
+    margin: 0; 
+}
+  
+img, picture, svg, video {
+    display: block; 
+    max-width: 100%;
+}
+  
+body {
+    min-height: 100vh;
+}
+
+/////////////////
+/// VARIABLES ///
+/////////////////
+
+$maincolor: #222;
+$contrastcolor: rgb(244, 244, 244);
+$lightGrey: #555;
+
+// -------------------//
+//        Main        //
+// -------------------//
+
+@mixin white-text-black-bg {
+    color: $contrastcolor;
+    background-color: $maincolor;
+}
+
+nav {
+    @include white-text-black-bg();
+    display: flex;
+    flex-direction: row;
+    padding: 1.5rem;
+    
+    a {
+        @include white-text-black-bg();
+        padding: 0 10px;
+    }
+}
+
+h1 {
+    margin: 2rem;
+}
