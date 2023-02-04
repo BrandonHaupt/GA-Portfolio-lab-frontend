@@ -34,8 +34,17 @@ $lightGrey: #555;
 }
 
 header {
-    background: url("https://www.html5gamedevs.com/uploads/monthly_2017_07/starfield.gif.a0b1c84afb4205aa14ee186005c7a610.gif");
+    // background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F64.media.tumblr.com%2Fa39911173ad8fd36f451961c23f504b9%2Ftumblr_of1p3313Al1rldv4go1_1280.gif&f=1&nofb=1&ipt=0bee84832b687b114a5f8b5ee78be70e11c5e37c102491eca4779bafc28e9239&ipo=images");
     height: 200px;
+
+    .header-img {
+        position: absolute;
+        z-index: -1;
+        width: 100%;
+        height: 200px;
+        object-fit: cover;
+        background-repeat: repeat;
+    }
 
     nav {
         // @include white-text-black-bg();
