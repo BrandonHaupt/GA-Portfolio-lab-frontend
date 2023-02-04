@@ -4,6 +4,7 @@ export default function Header(props){
 
     return(
         <header>
+            <img src="./img/Profile-img.png" alt="profile" className="profile-img"/>
             <nav className="nav">
                 <Link to="/">
                      <div>HOME</div>
@@ -17,7 +18,6 @@ export default function Header(props){
                     <div>PROJECTS</div>
                 </Link>
             </nav>
-            <h1>My Portfolio Page</h1>
         </header>
     )
 
