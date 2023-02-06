@@ -40,7 +40,7 @@ $lightGrey: #555;
 
 header {
     // background: url("https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2F64.media.tumblr.com%2Fa39911173ad8fd36f451961c23f504b9%2Ftumblr_of1p3313Al1rldv4go1_1280.gif&f=1&nofb=1&ipt=0bee84832b687b114a5f8b5ee78be70e11c5e37c102491eca4779bafc28e9239&ipo=images");
-    height: 200px;
+    height: 300px;
     width: 100%;
     position: relative;
     display: flex;
@@ -136,4 +136,34 @@ footer {
 .App {
     position: relative;
     min-height: 100vh;
+}
+
+.project {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex: 0 0 33.33333333%;
+    margin-top: 5rem;
+    gap: 20px;
+    
+
+    .project-list {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+       
+    
+        // &:nth-child(1){
+        //     margin-top: 5rem;
+        // }
+        
+        img{
+            width: 100%;
+        }
+    
+        .project-buttons {
+            display: flex;
+            flex-direction: row;
+        }
+    }
 }
