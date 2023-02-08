@@ -1,9 +1,8 @@
 import { useLoaderData } from "react-router-dom";
+import about from "./json/about.json"
 
 
 function About(props) {
-
-  const about = useLoaderData()
 
   return <div>
       <h2>{about.name}</h2>
